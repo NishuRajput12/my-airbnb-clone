@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top shadow-sm">
+  <div class="container-fluid">
+   
+    <a class="navbar-brand d-flex align-items-center gap-2" href="/listings">
+      <i class="fa-brands fa-airbnb"></i>
+      <span class="fw-bold text-danger">airbnb</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+   
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+
+    
+      <form class="d-flex mx-auto search-form" role="search" method="GET" action="/listings">
+        <input 
+          class="form-control me-2" 
+          type="search" 
+          placeholder="Search destinations ....." 
+          aria-label="Search" 
+          name="q" 
+        />
+        <button class="btn btn-dark add-btn" type="submit">Search</button>
+      </form>
+      
+      
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+       
+        <li class="nav-item">
+          <a class="nav-link" href="/listings">Explore</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/listings/new">Airbnb your home</a>
+        </li>
+         <% if(!currUser){ %>
+        <li class="nav-item">
+          <a class="nav-link" href="/signup"><b> Signup</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/login"><b>Login</b></a>
+        </li>
+        <% } %>
+        <% if(currUser){ %>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout"><b>Logout</b></a>
+        </li>
+        <% } %>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
