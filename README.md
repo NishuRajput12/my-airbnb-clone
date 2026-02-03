@@ -5,7 +5,7 @@
 [![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
 [![EJS](https://img.shields.io/badge/EJS-D2B48C?style=flat-square&logo=ejs&logoColor=white)](https://ejs.co/)
 
-Airbnb Clone is a **full-stack Airbnb-inspired web application** built with **Node.js, Express.js, MongoDB, and EJS**.  
+Airbnb Clone is a **full-stack Airbnb-inspired web application** built with **Node.js, Express.js, MongoDB, and EJS**. 
 It allows users to **create, view, edit, and delete their own listings as well as leave reviews on properties.** with authentication, image uploads, and map integration.
 
 ---
